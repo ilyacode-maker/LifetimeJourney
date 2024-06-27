@@ -1,0 +1,273 @@
+
+
+
+* {
+
+    transition-duration: .25s;
+
+}
+
+body {
+    background : linear-gradient(to bottom, #6441A5,#2A0845);
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.Submit {
+    font-size: 2.5rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border : none;
+    background: transparent;
+    box-shadow: inset #d2bb97 0px 0px 0px 0px;
+}
+.Submit:hover{
+
+    word-spacing: 20px;
+
+}
+
+
+.Form p {
+    margin : 0;
+    margin-top: 2vh;
+
+}
+.Input {
+    outline: none;
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+
+.Error {
+
+    color: red;
+    font-size: 1rem;
+    font-family: "Montserrat";
+
+}
+
+.FormDiv {
+    display: grid;
+    align-items: center;
+
+}
+.Form h1 {
+    margin: 3vw;
+    margin-bottom: 0;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-size: 2.5rem;
+
+}
+.Form {
+    position: relative;
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55vh;
+    height: fit-content;
+    display: grid;
+    font-size: 2rem;
+    align-items: center;
+    font-family: 'Bad Script';
+    background: #FFE3B8;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: rgba(61, 61, 61, 0.631) 0px 5px 5px 3px;
+
+}
+.Inputs {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: left;
+
+}
+.Redirect {
+    position: relative;
+    z-index: 1;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background: #FFE3B8;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    display: grid;
+    text-align: center;
+    font-family: 'Bad Script';
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    width: fit-content;
+    border: 2px solid black;
+    border-top: none;
+
+}
+.Redirect p {
+
+    margin : 0;
+
+}
+.Redirect:hover {
+
+    padding-top: 3vh;
+
+}
+.fixed {
+    position: absolute;
+    text-align: center;
+    height: fit-content;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 15vh;
+
+}
+.Options {
+    box-shadow: rgba(40, 40, 40, 0.768) 0px 0px 15px 3px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    border-radius: 100px;
+    background-color: white;
+    border: 1px solid black;
+    width: 50vw;
+    height: 11vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    gap: 1vw;
+
+}
+.Option {
+
+    width:40%;
+    border-radius: 100px;   
+    background-color: white;
+    border: 1px solid black;
+    background: #FFE3B8;
+    font-size: 1.8vw;
+}
+.Option:hover {
+
+    box-shadow: rgba(40, 40, 40, 0.768) 0px 5px 15px 0px;
+
+}
+.Option:active {
+
+    background-color: #cfb896;
+    color: rgb(32, 32, 32);
+
+}
+.Tabs {
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: end;
+    gap : .5vw;
+
+}
+.Tab {
+    font-family: "Montserrat";
+    font-size: 1.2vw;
+    width:50%;
+    height: 5vh;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border : 1px solid black;
+    border-bottom: none;
+    box-shadow: inset rgba(117, 117, 117, 0.668) 0px -5px 3px 0px;
+
+}
+
+.Arrow {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 20px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.Tab:hover {
+    height: 7vh;
+
+}
+
+.SettingsDiv {
+
+    margin-left : 150vw;
+
+}
+
+
+.NavBar {
+
+    margin: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+.NavBar img {
+    transform: rotateZ(0);
+
+}
+.NavBarDiv {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+
+
+
+#Tab1 {
+
+    box-shadow: rgba(255, 255, 255, 1) 0px 5px 0px 0px;
+
+}
+
+
+
+#Btn0 {
+    color : white;
+    font-family: "Montserrat";
+    background: linear-gradient(to right,#6F0000,#200122);
+
+}
+#Btn1 {
+
+    font-family: "Montserrat";
+    background: linear-gradient(to right,#FFFFFF,#076585);
+
+}
+#Btn2 {
+
+    color : white;
+    font-family: "Montserrat";
+    background: linear-gradient(to right,#FFB88C,#DE6262);
+
+}
+#Btn3 {
+
+    color : white;
+    font-family: "Montserrat";
+    background: linear-gradient(to right,#6441A5,#2A0845);
+
+}

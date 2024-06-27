@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>a Lifetime Journey | Homepage</title>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Italianno&family=MonteCarlo&family=Moon+Dance&family=New+Rocker&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="{{ url_for('static', filename='jquery-3.7.1.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div>
+            <div id="Title" class="row">
+
+                <h1> a Lifetime Journey...</h1>
+                <!-- <a href="{{ url_for('logout') }}">Logout</a> -->
+
+            </div>
+            <div class="w-100">
+                {% if blocked %}
+                    <div class="ErrorBox" >
+
+                        <p>{{ blocked }}</p>
+
+                    </div>
+                {% else %}
+                    <div class="Spacing">
+                    </div>
+                {% endif %}
+
+            </div>
+            <div class="StartDiv w-100">
+                <div class="w-100">
+
+                    <div class="InputDiv ChangeTheme">
+                        <input class="d-none FileInput" type="file">   
+                        <button class="ChangeTheme col File">Select a file</button>
+                        <div class="dropdown col">
+                            <button class="ChangeTheme btn btn-secondary dropdown-toggle Select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Input Type
+                            </button>
+                            <ul class="dropdown-menu w-100 ChangeTheme">
+                              <li><a class="dropdown-item" id="docx">Word File</a></li>
+                              <li><a class="dropdown-item" id="txt">Text File</a></li>
+                              <li><a class="dropdown-item" id="pdf">PDF File</a></li>
+                            </ul>
+                          </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="w-100">
+
+                    <button class="StartButton">Start</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <script  src="{{ url_for('static', filename='script.js') }}"></script>
+        <div class="fixed w-100">
+            <div class="SettingsDiv">
+                <div class="Tabs">
+    
+                    <button class="Tab" id="Tab0">Themes</button>
+                    <button class="Tab" id="Tab1">Background</button>
+                    <button class="Tab" id="Tab2">Fonts</button>
+    
+                </div>
+                <div class="Options">
+                    
+                    <button class="Option" id="Btn0">Horror</button>
+                    <button class="Option" id="Btn1">Optimism</button>
+                    <button class="Option" id="Btn2">Sunset</button>
+                    <button class="Option" id="Btn3">Mystery</button>
+    
+    
+    
+            </div>
+            <div class="DownloadDiv">
+                
+                <button class="Logout">Log out</button>
+                <button class="Previous">Previous Book</button>
+
+            </div>
+            <div class="NavBarDiv">
+    
+                <button class="Arrow NavBar"><img src="{{url_for('static',filename='LeftArrow.png')}}"></button>
+    
+            </div>
+    
+        </div>
+        <script src="{{ url_for('static', filename='script.js')}}"></script>
+    
+    
+</body>
+</html>
